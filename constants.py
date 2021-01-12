@@ -9,4 +9,4 @@ SCREEN_HEIGHT = 640
 COLUMNS = 12
 ROWS = 19
 COLORS = ['red','green','blue','gray']
-TILE_WIDTH = 32
+BUBBLE_WIDTH = 32
