@@ -7,8 +7,8 @@ class Level:
         self.y = 25
         self.columns = COLUMNS
         self.rows = ROWS
-        self.bubble_width = TILE_WIDTH
-        self.bubble_height = TILE_WIDTH
+        self.bubble_width = BUBBLE_WIDTH
+        self.bubble_height = BUBBLE_WIDTH
         self.row_height = 28
         self.row_offset = 0
         self.radius = self.bubble_width / 2
