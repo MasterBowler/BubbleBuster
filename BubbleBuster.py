@@ -1,5 +1,4 @@
 from constants import *
-#from tile import Tile
 from level import Level
 from player import Player
 from bubble import Bubble
