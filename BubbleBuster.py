@@ -28,7 +28,7 @@ for c in COLORS:
 level = Level()
 level.random_level()
 player = Player()
-bubble_to_shoot = Bubble(SCREEN_WIDTH / 2 - TILE_WIDTH / 2, SCREEN_HEIGHT - TILE_WIDTH, 500, 90, 1, False)
+bubble_to_shoot = Bubble(SCREEN_WIDTH / 2 - BUBBLE_WIDTH / 2, SCREEN_HEIGHT - BUBBLE_WIDTH, 500, 90, 1, False)
 
 def get_bubble_coordinate(row, column):
     bubble_x = level.x + column * level.bubble_width
