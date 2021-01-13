@@ -25,6 +25,10 @@ class Level:
             self.grid.append(new_row)
 
     def load_level(self, level_number):
+        self.x = 40
+        self.y = 25
+        self.columns = COLUMNS
+        self.rows = ROWS
         fullname = os.path.join("levels", "level" + str(level_number) + ".lvl")
         file = open(fullname, "r")
         line = file.readline().split()
