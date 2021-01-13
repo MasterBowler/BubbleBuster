@@ -88,6 +88,7 @@ def update_mouse_angle():
             mouse_angle = upper_bound
     elif mouse_angle < lower_bound or mouse_angle >= 270:
         mouse_angle = lower_bound
+    player.angle = mouse_angle
 
 
 def render_mouse_angle():
@@ -254,7 +255,7 @@ def main():
             print("ai pierdut")
         if level.check_win():
             current_level += 1
-            if current_level <= 3:
+            if current_level <= LEVELS:
                 level.load_level(current_level)
                 bubble_to_shoot.reinitialize(
                     SCREEN_WIDTH / 2 - BUBBLE_WIDTH / 2,
